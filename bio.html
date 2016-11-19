@@ -23,6 +23,60 @@
                 document.body.removeChild(load_screen);
             })
         </script>
+        
+        <style>
+            div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    margin-top: 15px;
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    width: 20%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+        </style>
     </head>
     <body>
         <div class="header">
@@ -53,7 +107,7 @@
                 </a></span>,
                 <span style="color: black; text-decoration: underline;">
                 <a href="https://emfisis.physics.uiowa.edu/" target="_blank">
-                    Univerity of Iowa Physics Department
+                    University of Iowa Physics Department
                 </a></span>, 
                 <span style="color: black; text-decoration: underline;">
                 <a href="https://www.statefarm.com/careers/become-an-intern/IT-internships" target="_blank">
@@ -67,23 +121,72 @@
                 <a href="http://www.eip-llc.com/" target="_blank">
                     Energy Independence Partners, LLC
                 </a></span>.
-                 My internship experences have allowed me to gain relevant skills towards pursuing my goal of becoming a software engineer.
+                 My internship experences have allowed me to gain relevant skills towards pursuing my goal of becoming a software engineer.<br><br>
+                Upon my graduation from the University of Iowa in December, I have accepted a job offer to work
+                as a Software Engineer for a software consulting company in Des Moines called
+                <span style="color: black; text-decoration: underline;">
+                <a href="http://www.qci.com" target="_blank">
+                    QCI</a></span>.
             </p>
-            <div id="photos">
+                
+                <!--
                 <img src="pictures/dm-marathon.jpeg" alt="Armond">
                 <img src="pictures/me.jpeg" alt="Armond">
                 <img src="pictures/mt-rainier.jpg" alt="Armond">
+                -->
             </div>
+            <div class="responsive">
+              <div class="img">
+                <a target="_blank" href="pictures/rainier.jpg">
+                  <img src="pictures/rainier.jpg" alt="Mt. Rainier" width="300" height="200">
+                </a>
+                <div class="desc">Mt. Rainier, Seattle WA, August 2015</div>
+              </div>
+            </div>
+
+
+            <div class="responsive">
+              <div class="img">
+                <a target="_blank" href="pictures/dm-marathon.jpeg">
+                  <img src="pictures/dm-marathon.jpeg" alt="Marathon" width="600" height="400">
+                </a>
+                <div class="desc">Des Moines Marathon, Des Moines, IA, October 2015</div>
+              </div>
+            </div>
+
+            <div class="responsive">
+              <div class="img">
+                <a target="_blank" href="pictures/kangaroo.JPG">
+                  <img src="pictures/kangaroo.JPG" alt="Australia" width="600" height="400">
+                </a>
+                <div class="desc">Currumbin Wildlife Sanctuary, Queensland Australia, June 2016</div>
+              </div>
+            </div>
+
+            <div class="responsive">
+              <div class="img">
+                <a target="_blank" href="img_mountains.jpg">
+                  <img src="pictures/lucy.jpg" alt="Lucy" width="600" height="400">
+                </a>
+                <div class="desc">Doggy.</div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            
+            <div class="individual-content"> 
             <p>
                 <br><br>
-                In addition to my academic and professional life, my interests include running, climbing, drinking coffee, and basically all other things that will increase my adrenaline levels. I am an advocate for dog cuddling and I would rather get E. Coli before I stop eating at Chipotle.  I love writing code and doing UI/UX design for others.  Find me on github, social media, or shoot me an email if you want to get in touch.
+                In addition to my academic and professional life, my interests include dogs, exercising, running, climbing, drinking coffee, and basically all other things that will increase my adrenaline levels. I am an advocate for dog cuddling and strive to make enough money that I can give it all away.  I love writing code and doing UI/UX design for others.  Find me on 
+                <span style="color: black; text-decoration: underline;">
+                <a href="https://github.com/armondluthens" target="_blank">
+                github</a></span>, social media, or shoot me an email if you want to get in touch.
             </p>
             <a href="portfolio.html">
             <div class="portfolio"> 
                 View My Portfolio
             </div>
             </a>
-        </div>
+            </div>
        
 
         <div class="footer">

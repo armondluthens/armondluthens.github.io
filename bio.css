@@ -106,18 +106,32 @@ span a:hover{
         Images Section
 /*-----------------------------------------------------------*/
 
-#photos{
+#photos1{
+    float: left;
     width:90%;
     margin-left:5%;
 }
 
-#photos img{
+#photos1 img{
+    max-width: 40%;
+    height: auto;
+    display: inline;
+    border-radius: 10px;
+    
+}
+#photos2{
     float: left;
-    width: 25%;
-    height: 300px;
-    margin-left: 4.1666666%;
-    margin-right: 4.1666666%;
-    margin-bottom: 15px;
+    width:90%;
+    margin-left:5%;
+}
+
+#photos2 img{
+    float: right;
+    max-width: 100%;
+    height: 500px;
+    display: inline;
+    border-radius: 10px;
+    
 }
 
 
