@@ -1,0 +1,49 @@
+@media screen and (max-width: 950px) {
+    .individual-content img{
+        width: 35%;
+    }
+    
+    .individual-content p{    
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 680px) { 
+    .header{
+        height: 175px;
+    }
+    .header ul{
+        float: left;
+        margin-right: 2.5%;
+    }
+    
+    .individual-content p{
+        font-size: 18px;
+    }
+    .header h1{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .header{
+        height: 225px;
+    }
+
+    
+    .portfolio{
+        width: 50%;
+        margin-left: 25%;
+        font-size: 21px;
+    }
+    .header li {
+        font-size: 18px;
+    
+    }
+
+}
+
+
+
