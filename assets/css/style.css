@@ -15,10 +15,30 @@ a:hover {
   text-decoration: none;
 }
 
+/*--------------------------------------------------------------
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
+--------------------------------------------------------------*/
+@font-face {
+  font-family: quicksilver;
+  src: url("../fonts/quicksilver/QUIKSLVN.TTF");
+}
 
+@font-face {
+  font-family: bodacious;
+  src: url("../fonts/BodaciousDemibold-0ng9.ttf");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: bodacious, sans-serif;
+  font-size: large;
+  background: purple;
+}
+
+h1 {
+    font-size: large;
+}
 
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
@@ -31,19 +51,18 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*--------------------------------------------------------------
-# Hero Section
+# info Section
 --------------------------------------------------------------*/
-#hero {
+#info {
   width: 100%;
   height: 100vh;
-  background: url("../img/cyber.jpg");
+  background: url("../img/bg-retro.jpg");
   position: relative;
 }
 
-#hero .hero-container {
+#info .info-container {
   position: absolute;
-  bottom: 0;
-  top: 0;
+  bottom: 200px;
   left: 0;
   right: 0;
   display: flex;
@@ -54,19 +73,20 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 15px;
 }
 
-#hero .hero-logo {
+#info .info-logo {
   margin-bottom: 1px;
 }
 
-#hero h1 {
-  margin: 0 0 30px 0;
-  font-size: 48px;
+#info h1 {
+  margin: -10px 0px 0px 20px;
+  font-size: 75px;
   font-weight: 500;
   line-height: 56px;
   color: #fff;
+  padding: 30px;
 }
 
-#hero h2 {
+#info h2 {
   color: #aeaeae;
   margin-bottom: 30px;
   font-size: 14px;
@@ -74,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-#hero .btn-get-started {
+#info .btn-get-started {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
@@ -89,23 +109,76 @@ h1, h2, h3, h4, h5, h6 {
   background: #ffff00;
 }
 
-#hero .btn-get-started:hover {
+#info .btn-get-started:hover {
   background: #fff;
   color: #7cc576;
 }
 
 @media (min-width: 1024px) {
-  #hero {
+  #info {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
+  #info h1 {
     font-size: 28px;
     line-height: 36px;
   }
-  #hero h2 {
+  #info h2 {
     line-height: 22px;
   }
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: clear;
+  color: white;
+  text-align: center;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: clear;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 35px;
+  width: 50px;
+}
+
+li a:hover {
+  background-color: purple;
+}
+
+.fa {
+  padding: 0;
+  font-size: 35px;
+  width: 75px;
+  text-align: center;
+  text-decoration: none;
 }
