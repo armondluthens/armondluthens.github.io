@@ -114,6 +114,10 @@ h1 {
   color: #7cc576;
 }
 
+#device {
+    display: none;
+}
+
 @media (min-width: 1024px) {
   #info {
     background-attachment: fixed;
@@ -124,9 +128,20 @@ h1 {
   #info h1 {
     font-size: 28px;
     line-height: 36px;
+    width: 100%;
+    margin: 0;
   }
   #info h2 {
     line-height: 22px;
+  }
+
+  #browser {
+    display: none;
+  }
+
+  #device {
+    display: inline;
+    width: 300px;
   }
 }
 
